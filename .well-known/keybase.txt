@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/truthseeker777
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thealpha-secret.xyz
+  * I am truthseeker777 (https://keybase.io/truthseeker777) on keybase.
+  * I have a public key ASCD5BEESnKIwPG48S9mZtKVhM6XGgJx_Hrr3f9qCgPG1go
+
+To do so, I am signing this object:
+
+{
+ "body": {
+ "key": {
+ "eldest_kid": "012083e411044a7288c0f1b8f12f6666d29584ce971a0271fc7aebddff6a0a03c6d60a",
+ "host": "keybase.io",
+ "kid": "012083e411044a7288c0f1b8f12f6666d29584ce971a0271fc7aebddff6a0a03c6d60a",
+ "uid": "1a3de015f22db2963dcc14a1437c3719",
+ "username": "truthseeker777"
+ },
+ "merkle_root": {
+ "ctime": 1780957592,
+ "hash": "0286a04ba2213bc2978b3fe252de00ce258527e873763679b5266387156efb519b2169e72ff135f1fec3d8a0661ef57759d4396ed879b30c9df332313b194ce0",
+ "hash_meta": "9fb8d8ac9bbc0d32032ca6d3d6c6278c2d8dd80150c49488914c6b088c0bd045",
+ "seqno": 27621919
+ },
+ "service": {
+ "entropy": "qyBWgxQMG90KSgDFoC6axwrA",
+ "hostname": "thealpha-secret.xyz",
+ "protocol": "https:"
+ },
+ "type": "web_service_binding",
+ "version": 2
+ },
+ "client": {
+ "name": "keybase.io go client",
+ "version": "6.6.3"
+ },
+ "ctime": 1780957629,
+ "expire_in": 504576000,
+ "prev": "8441a8ad49b2f64061718878ef5e4447ff8252b3fca28350b88de003400c2f93",
+ "seqno": 171,
+ "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgg+QRBEpyiMDxuPEvZmbSlYTOlxoCcfx6693/agoDxtYKp3BheWxvYWTES5cCzKvEIIRBqK1JsvZAYXGIeO9eREf/glKz/KKDULiN4ANADC+TxCCWeqj50x1cl5yY2pMxAMdw03U90jhtpFX7Anp8lORhPgIBwqNzaWfEQFWgX2yr+V+Xn9zWijXG7BF0lgJignWML85BPPPXclkvX1E+SiG6Akjd5YuHtOC8TNz+6ugU7+ZL9blreG96VAmoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCAQ9W2vjCERKnIaKofeQ7PnPT/1sV4ha2W8oveJ449JPqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/truthseeker777
+
+==================================================================
