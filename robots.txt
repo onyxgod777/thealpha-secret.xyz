@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thealpha-secret.xyz/sitemap.xml
+Sitemap: https://onyxgod777.github.io/thealpha-secret.xyz/sitemap.xml
