@@ -6,6 +6,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://pi.thealpha-secret.xyz/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pi.thealpha-secret.xyz/blog/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://gutwise.thealpha-secret.xyz/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -26,14 +36,34 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pi.thealpha-secret.xyz/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://pi.thealpha-secret.xyz/blog/</loc>
+    <loc>https://worldmonitor.thealpha-secret.xyz/</loc>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://haiti.thealpha-secret.xyz/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://okx.thealpha-secret.xyz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://claw.thealpha-secret.xyz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://shakepay.thealpha-secret.xyz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wealthsimple.thealpha-secret.xyz/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cryptotab.thealpha-secret.xyz/</loc>
@@ -46,22 +76,13 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://nft.thealpha-secret.xyz/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://shakepay.thealpha-secret.xyz/</loc>
+    <loc>https://lure.thealpha-secret.xyz/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://haiti.thealpha-secret.xyz/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.4</priority>
   </url>
 </urlset>
