@@ -51,11 +51,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://claw.thealpha-secret.xyz/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://shakepay.thealpha-secret.xyz/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -79,10 +74,5 @@
     <loc>https://nft.thealpha-secret.xyz/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lure.thealpha-secret.xyz/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.4</priority>
   </url>
 </urlset>
