@@ -9,6 +9,7 @@
     <link rel="canonical" href="https://thealpha-secret.xyz/" />
     <meta name="google-adsense-account" content="ca-pub-7510426943014771">
     <meta name="theme-color" content="#07070c" />
+    <meta name="color-scheme" content="dark" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%2307070c'/%3E%3Ccircle cx='50' cy='50' r='44.5' fill='none' stroke='%23e2b857' stroke-width='2'/%3E%3Ctext x='50' y='64' text-anchor='middle' font-size='44' fill='%23e2b857'%3E%CE%A6%3C/text%3E%3C/svg%3E" />
     <meta property="og:title" content="The Alpha Secret — Exploring the Truth Beneath Reality" />
     <meta property="og:description" content="A network of fourteen independent projects exploring gut health, AI-powered fitness, world intelligence, and the true geometry of Pi — united by one thread: the pursuit of truth." />
@@ -24,202 +25,259 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
     :root{
-        --ink:#07070c;
-        --ink-2:#0b0b13;
-        --surface:#101019;
-        --surface-2:#14141f;
+        --ink:#06060b;
+        --ink-2:#0a0a12;
+        --surface:rgba(255,255,255,.026);
+        --surface-2:rgba(255,255,255,.05);
         --line:rgba(232,222,196,.10);
-        --line-2:rgba(232,222,196,.18);
+        --line-2:rgba(232,222,196,.20);
         --gold:#e2b857;
         --gold-soft:#f2d38f;
-        --gold-dim:rgba(226,184,87,.16);
-        --cream:#eee8d6;
-        --muted:#9d9887;
-        --dim:#6b6859;
+        --gold-dim:rgba(226,184,87,.12);
+        --cream:#f0ebdb;
+        --muted:#9c978a;
+        --dim:#6a6759;
         --serif:'Fraunces',Georgia,'Times New Roman',serif;
-        --sans:'IBM Plex Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
-        --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
-        --max:1140px;
+        --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+        --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+        --max:1180px;
+        --r-sm:12px;--r:18px;--r-lg:26px;
         --ease:cubic-bezier(.22,.61,.36,1);
+        --shadow:0 22px 60px -30px rgba(0,0,0,.9);
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:92px}
     body{
-        background:var(--ink);
-        color:var(--cream);
-        font-family:var(--sans);
-        font-size:16.5px;
-        line-height:1.65;
-        -webkit-font-smoothing:antialiased;
-        overflow-x:hidden;
-        text-wrap:pretty;
+        background:var(--ink);color:var(--cream);font-family:var(--sans);
+        font-size:16.5px;line-height:1.62;
+        -webkit-font-smoothing:antialiased;overflow-x:hidden;text-wrap:pretty;
     }
     body::before{
         content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
         background:
-            radial-gradient(680px 420px at 78% -6%,rgba(226,184,87,.13),transparent 62%),
-            radial-gradient(560px 400px at 8% 12%,rgba(120,150,190,.07),transparent 60%),
-            radial-gradient(900px 700px at 50% 108%,rgba(226,184,87,.05),transparent 65%);
+            radial-gradient(720px 460px at 82% -8%,rgba(226,184,87,.14),transparent 64%),
+            radial-gradient(620px 420px at 4% 8%,rgba(116,144,190,.07),transparent 62%),
+            radial-gradient(1000px 760px at 50% 112%,rgba(226,184,87,.05),transparent 66%);
     }
     body::after{
-        content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
-        background-image:radial-gradient(rgba(238,232,214,.055) 1px,transparent 1px);
-        background-size:22px 22px;
-        mask-image:radial-gradient(700px 500px at 50% 0%,#000 0%,transparent 78%);
-        -webkit-mask-image:radial-gradient(700px 500px at 50% 0%,#000 0%,transparent 78%);
+        content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.4;
+        background-image:radial-gradient(rgba(238,232,214,.05) 1px,transparent 1px);
+        background-size:24px 24px;
+        mask-image:radial-gradient(760px 520px at 50% 0%,#000,transparent 76%);
+        -webkit-mask-image:radial-gradient(760px 520px at 50% 0%,#000,transparent 76%);
     }
-    .shell{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:0 26px}
+    .shell{position:relative;z-index:1;max-width:var(--max);margin:0 auto;padding:0 24px}
     a{color:inherit;text-decoration:none}
-    :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+    :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
     .skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:#0a0a0f;padding:10px 16px;z-index:99;font-weight:600}
     .skip:focus{left:12px;top:12px}
-    ::selection{background:rgba(226,184,87,.28)}
+    ::selection{background:rgba(226,184,87,.3)}
+    canvas,svg{display:block;max-width:100%}
+
+    /* ── scroll progress ─────────────────────── */
+    .prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:60;
+        background:linear-gradient(to right,rgba(226,184,87,.25),var(--gold),var(--gold-soft));
+        box-shadow:0 0 18px rgba(226,184,87,.55)}
 
     /* ── top bar ─────────────────────────────── */
-    .bar{
-        position:sticky;top:0;z-index:40;
-        backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
-        background:linear-gradient(to bottom,rgba(7,7,12,.88),rgba(7,7,12,.62));
-        border-bottom:1px solid transparent;transition:border-color .35s var(--ease);
-    }
+    .bar{position:sticky;top:0;z-index:40;
+        backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);
+        background:linear-gradient(to bottom,rgba(6,6,11,.9),rgba(6,6,11,.6));
+        border-bottom:1px solid transparent;transition:border-color .4s var(--ease)}
     .bar.stuck{border-color:var(--line)}
-    .bar-in{max-width:var(--max);margin:0 auto;padding:14px 26px;display:flex;align-items:center;gap:20px}
-    .mark{display:flex;align-items:center;gap:11px;font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:var(--muted);min-height:44px}
-    .mark .phi{
-        width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:50%;
+    .bar-in{max-width:var(--max);margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:18px}
+    .mark{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.72rem;
+        letter-spacing:.16em;color:var(--muted);min-height:44px}
+    .mark .phi{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:50%;
         border:1px solid var(--line-2);color:var(--gold);font-family:var(--serif);font-size:1rem;
-        background:radial-gradient(circle at 50% 30%,rgba(226,184,87,.18),transparent 70%);
-        transition:transform .5s var(--ease)
-    }
+        background:radial-gradient(circle at 50% 30%,rgba(226,184,87,.2),transparent 70%);
+        transition:transform .6s var(--ease)}
     .mark:hover .phi{transform:rotate(180deg)}
-    .mark b{color:var(--cream);font-weight:500;letter-spacing:.14em}
-    .bar nav{margin-left:auto;display:flex;gap:4px;align-items:center}
-    .bar nav a{
-        font-family:var(--mono);font-size:.7rem;letter-spacing:.13em;color:var(--muted);
-        padding:12px 13px;border-radius:8px;transition:color .2s,background .2s;min-height:44px;display:flex;align-items:center
-    }
-    .bar nav a:hover{color:var(--gold);background:rgba(226,184,87,.07)}
-    .bar nav a.cta{border:1px solid var(--line-2);color:var(--cream)}
-    .bar nav a.cta:hover{border-color:var(--gold);background:var(--gold-dim)}
+    .mark b{color:var(--cream);font-weight:500;letter-spacing:.15em}
+    .bar nav{margin-left:auto;display:flex;gap:2px;align-items:center;
+        background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px}
+    .bar nav a{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;color:var(--muted);
+        padding:10px 14px;border-radius:999px;transition:color .2s,background .2s;display:flex;align-items:center}
+    .bar nav a:hover{color:var(--cream);background:var(--surface-2)}
+    .bar nav a[aria-current="true"]{color:var(--gold);background:var(--gold-dim)}
+    .bar nav a.cta{color:var(--cream);background:linear-gradient(180deg,rgba(226,184,87,.22),rgba(226,184,87,.1));
+        border:1px solid rgba(226,184,87,.34);margin-left:2px}
+    .bar nav a.cta:hover{background:linear-gradient(180deg,rgba(226,184,87,.34),rgba(226,184,87,.16))}
 
     /* ── hero ────────────────────────────────── */
-    .hero{display:grid;grid-template-columns:1.06fr .94fr;gap:54px;align-items:center;padding:76px 0 70px}
-    .eyebrow{
-        font-family:var(--mono);font-size:.71rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
-        display:flex;align-items:center;gap:12px;margin-bottom:26px
-    }
-    .eyebrow::before{content:"";width:34px;height:1px;background:linear-gradient(to right,transparent,var(--gold))}
-    h1{
-        font-family:var(--serif);font-weight:400;font-size:clamp(2.5rem,5.6vw,4.05rem);line-height:1.04;
-        letter-spacing:-.022em;color:var(--cream)
-    }
-    h1 em{font-style:italic;color:var(--gold);font-weight:400;padding-right:.06em}
-    .lede{margin-top:24px;color:var(--muted);font-size:1.055rem;max-width:30em}
+    .hero{display:grid;grid-template-columns:1.04fr .96fr;gap:56px;align-items:center;padding:74px 0 62px}
+    .eyebrow{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;
+        color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:24px}
+    .eyebrow::before{content:"";width:36px;height:1px;background:linear-gradient(to right,transparent,var(--gold))}
+    h1{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,5.8vw,4.35rem);line-height:1;
+        letter-spacing:-.028em;color:var(--cream);text-wrap:balance}
+    h1 em{font-style:italic;font-weight:400;padding-right:.06em;
+        background:linear-gradient(120deg,var(--gold-soft),var(--gold) 72%);-webkit-background-clip:text;
+        background-clip:text;color:transparent}
+    .lede{margin-top:26px;font-size:1.07rem;color:var(--muted);max-width:46ch}
     .lede strong{color:var(--cream);font-weight:500}
-    .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-    .btn{
-        display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;
-        font-size:.87rem;font-weight:500;letter-spacing:.01em;transition:transform .25s var(--ease),background .25s,border-color .25s,box-shadow .25s
-    }
+    .cta{margin-top:34px;display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:9px;min-height:48px;padding:0 24px;border-radius:999px;
+        font-size:.93rem;font-weight:500;transition:transform .25s var(--ease),box-shadow .25s var(--ease),
+        background .25s,border-color .25s;will-change:transform}
     .btn svg{transition:transform .3s var(--ease)}
+    .btn:hover{transform:translateY(-2px)}
     .btn:hover svg{transform:translateY(3px)}
-    .btn-solid{background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#0a0a0f;box-shadow:0 10px 34px -14px rgba(226,184,87,.85)}
-    .btn-solid:hover{transform:translateY(-2px);box-shadow:0 16px 40px -14px rgba(226,184,87,.95)}
-    .btn-ghost{border:1px solid var(--line-2);color:var(--cream)}
-    .btn-ghost:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
-    .facts{list-style:none;display:flex;flex-wrap:wrap;gap:26px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
-    .facts li{font-family:var(--mono);font-size:.7rem;letter-spacing:.11em;color:var(--dim);text-transform:uppercase}
-    .facts b{display:block;font-family:var(--serif);font-size:1.34rem;font-weight:500;color:var(--cream);letter-spacing:0;text-transform:none;margin-bottom:3px}
-    .hero-art{position:relative;aspect-ratio:1/1;max-height:460px;display:grid;place-items:center}
-    .hero-art canvas{width:100%;height:100%;display:block}
-    .hero-art::after{
-        content:"π = 4/√φ";position:absolute;bottom:6px;right:2px;font-family:var(--mono);
-        font-size:.68rem;letter-spacing:.16em;color:var(--dim)
-    }
+    .btn-solid{background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#0c0a06;
+        box-shadow:0 14px 34px -14px rgba(226,184,87,.7)}
+    .btn-solid:hover{box-shadow:0 20px 44px -14px rgba(226,184,87,.85)}
+    .btn-ghost{border:1px solid var(--line-2);color:var(--cream);background:var(--surface)}
+    .btn-ghost:hover{border-color:rgba(226,184,87,.5);background:var(--gold-dim);color:var(--gold)}
+    .facts{display:flex;gap:30px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);list-style:none;flex-wrap:wrap}
+    .facts li{display:flex;flex-direction:column;gap:2px;font-family:var(--mono);font-size:.67rem;
+        letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+    .facts b{font-family:var(--serif);font-size:1.58rem;font-weight:400;color:var(--cream);letter-spacing:0;
+        font-variant-numeric:tabular-nums;line-height:1.1}
+    .hero-art{position:relative;border:1px solid var(--line);border-radius:var(--r-lg);padding:16px;
+        background:linear-gradient(160deg,var(--surface),transparent 60%);box-shadow:var(--shadow);overflow:hidden}
+    .hero-art::after{content:"";position:absolute;inset:0;pointer-events:none;
+        background:radial-gradient(280px 220px at 70% 22%,rgba(226,184,87,.12),transparent 70%)}
+    .hero-art canvas{width:100%;aspect-ratio:1/1}
+    .hero-art .tag{position:absolute;bottom:12px;right:16px;font-family:var(--mono);font-size:.66rem;
+        letter-spacing:.16em;color:var(--dim)}
 
     /* ── directory ───────────────────────────── */
-    .group{padding:52px 0 8px;scroll-margin-top:76px}
-    .group-head{display:flex;align-items:baseline;gap:20px;flex-wrap:wrap;padding-bottom:18px;border-bottom:1px solid var(--line)}
-    .group-idx{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--gold)}
-    .group-head h2{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.05rem);font-weight:400;letter-spacing:-.015em}
-    .group-head p{color:var(--dim);font-size:.87rem;margin-left:auto;max-width:26em;text-align:right}
+    .group{padding:54px 0 10px;scroll-margin-top:88px}
+    .group-head{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;align-items:baseline;
+        padding-bottom:22px;margin-bottom:26px;border-bottom:1px solid var(--line)}
+    .group-idx{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--gold);
+        grid-row:span 2;padding-top:8px}
+    .group-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.6vw,2rem);
+        letter-spacing:-.02em;line-height:1.15}
+    .group-head p{color:var(--muted);font-size:.94rem;max-width:64ch}
 
-    .row{
-        display:grid;grid-template-columns:46px minmax(186px,236px) minmax(0,1fr) 26px;
-        grid-template-areas:"idx name desc go";gap:26px;align-items:baseline;
-        padding:19px 14px 19px 6px;border-bottom:1px solid var(--line);position:relative;
-        transition:background .25s var(--ease),padding .25s var(--ease)
-    }
-    .row::before{
-        content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold);
-        transform:scaleY(0);transform-origin:center;transition:transform .3s var(--ease)
-    }
-    .row:hover{background:linear-gradient(to right,rgba(226,184,87,.055),transparent 72%);padding-left:14px}
-    .row:hover::before{transform:scaleY(1)}
-    .row-idx{grid-area:idx;font-family:var(--mono);font-size:.7rem;color:var(--dim);letter-spacing:.1em;transition:color .25s;padding-top:6px}
-    .row:hover .row-idx{color:var(--gold)}
-    .row-name{grid-area:name;font-family:var(--serif);font-size:1.19rem;font-weight:500;color:var(--cream);display:flex;align-items:center;gap:10px;transition:color .25s}
-    .row-name span.gl{font-family:var(--sans);font-size:.95rem;filter:saturate(.85)}
-    .row:hover .row-name{color:var(--gold)}
-    .row-desc{grid-area:desc;color:var(--muted);font-size:.895rem;line-height:1.6}
-    .row-go{grid-area:go;font-family:var(--mono);color:var(--dim);font-size:.95rem;text-align:right;transition:transform .3s var(--ease),color .25s}
-    .row:hover .row-go{color:var(--gold);transform:translateX(5px)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{position:relative;display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:start;
+        padding:22px;border:1px solid var(--line);border-radius:var(--r);
+        background:linear-gradient(165deg,var(--surface),rgba(255,255,255,.012));
+        transition:transform .3s var(--ease),border-color .3s,box-shadow .3s,background .3s}
+    .card:hover{transform:translateY(-3px);border-color:rgba(226,184,87,.34);
+        background:linear-gradient(165deg,rgba(226,184,87,.06),rgba(255,255,255,.015));
+        box-shadow:0 24px 50px -30px rgba(226,184,87,.5)}
+    .card .ico{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:1.2rem;
+        background:var(--surface-2);border:1px solid var(--line);line-height:1;filter:saturate(.92)}
+    .card .num{position:absolute;top:14px;right:18px;font-family:var(--mono);font-size:.64rem;
+        letter-spacing:.14em;color:var(--dim);font-variant-numeric:tabular-nums}
+    .card h3{font-size:1.03rem;font-weight:600;letter-spacing:-.01em;margin-bottom:5px}
+    .card:hover h3{color:var(--gold)}
+    .card p{font-size:.9rem;color:var(--muted);line-height:1.55}
+    .card .go{font-family:var(--mono);font-size:.92rem;color:var(--dim);align-self:center;
+        transition:transform .3s var(--ease),color .3s}
+    .card:hover .go{transform:translateX(3px);color:var(--gold)}
 
-    /* flagship */
-    .flag{
-        display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:40px;align-items:center;
-        margin-top:6px;padding:38px 34px;border:1px solid var(--line);border-radius:16px;
+    .flag{position:relative;display:grid;grid-template-columns:1.38fr .62fr;gap:26px;align-items:center;
+        padding:32px;border:1px solid var(--line-2);border-radius:var(--r-lg);overflow:hidden;
         background:
-            radial-gradient(420px 260px at 92% 12%,rgba(226,184,87,.11),transparent 68%),
-            linear-gradient(160deg,var(--surface),var(--ink-2));
-        position:relative;overflow:hidden;transition:border-color .3s var(--ease),transform .35s var(--ease)
-    }
-    .flag:hover{border-color:rgba(226,184,87,.42);transform:translateY(-3px)}
-    .flag-tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-    .flag h3{font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,2.35rem);font-weight:400;margin:14px 0 12px;letter-spacing:-.018em}
-    .flag p{color:var(--muted);font-size:.95rem;max-width:44ch}
-    .flag-more{display:inline-flex;align-items:center;gap:9px;margin-top:22px;font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+            radial-gradient(440px 260px at 92% 10%,rgba(226,184,87,.13),transparent 68%),
+            linear-gradient(150deg,rgba(226,184,87,.06),rgba(255,255,255,.014) 55%);
+        box-shadow:var(--shadow);margin-bottom:16px;
+        transition:transform .3s var(--ease),border-color .3s,box-shadow .3s}
+    .flag:hover{transform:translateY(-4px);border-color:rgba(226,184,87,.42);
+        box-shadow:0 30px 70px -34px rgba(226,184,87,.55)}
+    .flag-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.63rem;
+        letter-spacing:.19em;text-transform:uppercase;color:var(--gold);padding:6px 12px;border-radius:999px;
+        background:var(--gold-dim);border:1px solid rgba(226,184,87,.28)}
+    .flag h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,3vw,2.15rem);
+        letter-spacing:-.02em;line-height:1.12;margin:16px 0 12px}
+    .flag p{color:var(--muted);max-width:52ch;font-size:.95rem}
+    .flag-more{display:inline-flex;align-items:center;gap:8px;margin-top:20px;font-family:var(--mono);
+        font-size:.71rem;letter-spacing:.13em;text-transform:uppercase;color:var(--gold)}
     .flag-more i{font-style:normal;transition:transform .3s var(--ease)}
-    .flag:hover .flag-more i{transform:translateX(6px)}
-    .flag-art{width:100%;max-width:240px;justify-self:end}
+    .flag:hover .flag-more i{transform:translateX(5px)}
+    .flag-art{width:100%;max-width:250px;justify-self:end}
     .flag-art .ring{transform-origin:100px 100px;animation:spin 90s linear infinite}
     @keyframes spin{to{transform:rotate(360deg)}}
 
-    /* ── connect ─────────────────────────────── */
-    .connect{
-        margin:84px 0 0;padding:44px 40px;border:1px solid var(--line);border-radius:18px;
-        background:
-            radial-gradient(520px 300px at 18% 0%,rgba(226,184,87,.10),transparent 70%),
-            linear-gradient(150deg,var(--surface-2),var(--ink-2));
-        display:grid;grid-template-columns:minmax(0,1fr) auto;gap:34px;align-items:center;scroll-margin-top:82px
-    }
-    .connect h2{font-family:var(--serif);font-size:clamp(1.6rem,3.2vw,2.15rem);font-weight:400;letter-spacing:-.015em}
-    .connect p{color:var(--muted);font-size:.93rem;margin-top:12px;max-width:46ch}
-    .ircline{
-        display:inline-flex;align-items:center;gap:14px;margin-top:22px;padding:11px 12px 11px 18px;
-        border:1px dashed var(--line-2);border-radius:12px;font-family:var(--mono);font-size:.8rem;color:var(--gold-soft);flex-wrap:wrap
-    }
-    .ircline em{font-style:normal;color:var(--dim)}
-    .copy{
-        border:1px solid var(--line-2);background:rgba(226,184,87,.06);color:var(--gold);
-        font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
-        padding:12px 15px;border-radius:9px;cursor:pointer;min-height:44px;transition:background .25s,border-color .25s,color .25s
-    }
-    .copy:hover{background:var(--gold-dim);border-color:var(--gold)}
-    .copy.done{background:rgba(120,200,140,.14);border-color:rgba(120,200,140,.5);color:#a9e2bd}
-    .spec{display:grid;gap:13px;min-width:266px;border-left:1px solid var(--line);padding-left:28px}
-    .spec div{display:flex;justify-content:space-between;gap:24px;font-family:var(--mono);font-size:.73rem;letter-spacing:.08em}
-    .spec dt{color:var(--dim);text-transform:uppercase;letter-spacing:.16em}
-    .spec dd{color:var(--cream);margin:0}
+    /* ── connect / IRC ───────────────────────── */
+    .connect{padding:74px 0 8px;scroll-margin-top:88px}
+    .connect-head{max-width:72ch}
+    .connect-head h2{font-family:var(--serif);font-weight:400;font-size:clamp(1.9rem,3.6vw,2.7rem);
+        letter-spacing:-.022em;line-height:1.1;text-wrap:balance}
+    .connect-head p{margin-top:16px;color:var(--muted);font-size:1rem}
+    .connect-head p b{color:var(--cream);font-weight:500}
 
-    footer{margin-top:70px;padding:30px 0 54px;border-top:1px solid var(--line);display:flex;gap:18px;flex-wrap:wrap;align-items:center;color:var(--dim);font-size:.8rem}
-    footer .fmark{font-family:var(--serif);color:var(--muted)}
-    footer nav{margin-left:auto;display:flex;gap:6px}
-    footer nav a{padding:10px 12px;border-radius:8px;transition:color .2s;min-height:44px;display:flex;align-items:center}
+    .irc{display:grid;grid-template-columns:1.28fr .72fr;gap:18px;margin-top:34px;align-items:start}
+    .panelbox{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);
+        box-shadow:var(--shadow);overflow:hidden}
+    .tabs{display:flex;gap:2px;padding:6px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.014);
+        overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+    .tabs::-webkit-scrollbar{display:none}
+    .tab{appearance:none;background:none;border:0;cursor:pointer;font-family:var(--mono);font-size:.68rem;
+        letter-spacing:.11em;text-transform:uppercase;color:var(--muted);padding:11px 15px;border-radius:999px;
+        white-space:nowrap;transition:color .2s,background .2s;min-height:42px}
+    .tab:hover{color:var(--cream);background:var(--surface-2)}
+    .tab[aria-selected="true"]{color:var(--gold);background:var(--gold-dim)}
+    .panel{padding:26px}
+    .panel[hidden]{display:none}
+    .app{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:start}
+    .app .ico{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:1.22rem;
+        background:var(--surface-2);border:1px solid var(--line);line-height:1}
+    .app h3{font-size:1.06rem;font-weight:600;display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+    .badge{font-family:var(--mono);font-size:.59rem;letter-spacing:.13em;text-transform:uppercase;
+        padding:3px 9px;border-radius:999px;border:1px solid var(--line-2);color:var(--muted)}
+    .badge.free{color:var(--gold);border-color:rgba(226,184,87,.3);background:var(--gold-dim)}
+    .app p{margin-top:8px;color:var(--muted);font-size:.92rem}
+    .app b{color:var(--cream);font-weight:500}
+    .app .get{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn-sm{min-height:42px;padding:0 18px;border-radius:999px;font-size:.85rem;display:inline-flex;
+        align-items:center;gap:8px;border:1px solid var(--line-2);background:var(--surface);color:var(--cream);
+        transition:transform .25s var(--ease),border-color .25s,background .25s}
+    .btn-sm:hover{transform:translateY(-2px);border-color:rgba(226,184,87,.5);background:var(--gold-dim)}
+    .btn-sm.prim{background:linear-gradient(180deg,var(--gold-soft),var(--gold));color:#0c0a06;
+        border-color:transparent;font-weight:600}
+    .btn-sm.prim:hover{background:linear-gradient(180deg,#f7dfa4,var(--gold))}
+    .steps{list-style:none;counter-reset:s;margin-top:22px;display:grid;gap:11px}
+    .steps li{counter-increment:s;display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline;
+        font-size:.89rem;color:var(--muted)}
+    .steps li::before{content:counter(s);font-family:var(--mono);font-size:.68rem;color:var(--gold);
+        width:22px;height:22px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(226,184,87,.28);
+        background:var(--gold-dim);flex:0 0 22px}
+    .steps b{color:var(--cream);font-weight:500}
+    code{font-family:var(--mono);font-size:.85em;color:var(--gold-soft);background:rgba(226,184,87,.08);
+        border:1px solid rgba(226,184,87,.16);padding:2px 7px;border-radius:7px;white-space:nowrap}
+
+    .settings{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--surface);
+        padding:22px;box-shadow:var(--shadow)}
+    .settings h3{font-family:var(--mono);font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;
+        color:var(--dim);margin-bottom:14px}
+    .rows{display:grid}
+    .row{display:grid;grid-template-columns:86px 1fr auto;gap:12px;align-items:center;padding:13px 0;
+        border-bottom:1px solid var(--line)}
+    .row:last-child{border-bottom:0}
+    .row dt{font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+    .row dd{font-family:var(--mono);font-size:.85rem;color:var(--cream);word-break:break-all}
+    .copy{appearance:none;cursor:pointer;font-family:var(--mono);font-size:.61rem;letter-spacing:.1em;
+        text-transform:uppercase;color:var(--muted);background:var(--surface-2);border:1px solid var(--line);
+        border-radius:8px;padding:8px 11px;min-height:36px;transition:color .2s,border-color .2s,background .2s}
+    .copy:hover{color:var(--gold);border-color:rgba(226,184,87,.4)}
+    .copy.done{color:#a9e2bd;border-color:rgba(120,200,140,.5);background:rgba(120,200,140,.12)}
+    .note{margin-top:16px;padding:15px 16px;border-radius:var(--r-sm);border:1px solid var(--line);
+        background:rgba(255,255,255,.02);font-size:.85rem;color:var(--muted);display:grid;gap:12px}
+    .note b{color:var(--cream);font-weight:500}
+    .note .fp{font-family:var(--mono);font-size:.71rem;letter-spacing:.05em;color:var(--gold-soft);word-break:break-all}
+
+    /* ── reveal ──────────────────────────────── */
+    .js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .js .rv.in{opacity:1;transform:none}
+
+    /* ── footer ──────────────────────────────── */
+    footer{margin-top:76px;padding:34px 0 54px;border-top:1px solid var(--line);
+        display:flex;flex-wrap:wrap;gap:16px 26px;align-items:center;justify-content:space-between;
+        font-size:.83rem;color:var(--dim)}
+    .fmark{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:.69rem;
+        letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+    footer nav{display:flex;gap:6px}
+    footer nav a{color:var(--muted);transition:color .2s;padding:10px 12px;border-radius:8px;
+        min-height:44px;display:flex;align-items:center}
     footer nav a:hover{color:var(--gold)}
 
     /* ── translation widget ──────────────────── */
@@ -237,34 +295,22 @@
     body{top:0!important}
     .goog-logo-link,.goog-te-gadget .goog-logo-link{display:none!important}
 
-    /* ── reveal ──────────────────────────────── */
-    .js .rv{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
-    .js .rv.in{opacity:1;transform:none}
-
     @media (max-width:900px){
-        .hero{grid-template-columns:1fr;gap:34px;padding:52px 0 40px}
-        .hero-art{order:-1;max-height:290px}
+        .hero{grid-template-columns:1fr;gap:36px;padding:52px 0 44px}
+        .hero-art{order:-1;max-width:330px}
         .bar nav a:not(.cta){display:none}
-        .connect{grid-template-columns:1fr;gap:26px;padding:34px 26px}
-        .spec{min-width:0;border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:22px}
-        .flag{grid-template-columns:1fr;padding:30px 24px;gap:26px}
-        .flag-art{justify-self:start;max-width:180px}
-        .group-head p{margin-left:0;text-align:left}
-        .row{
-            grid-template-columns:34px minmax(0,1fr) 22px;
-            grid-template-areas:"idx name go" "idx desc go";
-            gap:5px 14px;align-items:start;padding:17px 8px 17px 4px
-        }
-        .row-idx{padding-top:5px}
-        .row-go{align-self:center}
-        .row-desc{font-size:.88rem}
-        .facts{gap:20px 30px}
+        .grid{grid-template-columns:1fr}
+        .irc{grid-template-columns:1fr}
+        .flag{grid-template-columns:1fr;padding:28px 24px;gap:22px}
+        .flag-art{justify-self:start;max-width:190px}
     }
     @media (max-width:520px){
         .shell{padding:0 18px}
         .bar-in{padding:12px 18px}
-        .facts li{font-size:.64rem}
-        .row-desc{font-size:.87rem}
+        .facts{gap:20px 26px}
+        .facts li{font-size:.63rem}
+        .panel{padding:20px}
+        .card{padding:19px}
         #google_translate_element{bottom:12px;right:12px}
         .goog-te-combo{min-width:0;max-width:150px}
     }
@@ -278,7 +324,8 @@
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<a class="skip" href="#network">Skip to the network</a>
+<a class="skip" href="#directory">Skip to the directory</a>
+<div class="prog" id="prog" aria-hidden="true"></div>
 
 <header class="bar" id="bar">
     <div class="bar-in">
@@ -321,6 +368,7 @@
         </div>
         <div class="hero-art" aria-hidden="true">
             <canvas id="art"></canvas>
+            <span class="tag">π = 4/√φ</span>
         </div>
     </section>
 
@@ -342,37 +390,48 @@
                 </div>
                 <svg class="flag-art" viewBox="0 0 200 200" role="img" aria-label="A circle and a square of equal perimeter">
                     <circle cx="100" cy="100" r="76" fill="none" stroke="#e2b857" stroke-width="1.1" opacity=".85"/>
-                    <rect x="40.25" y="40.25" width="119.5" height="119.5" fill="none" stroke="#eee8d6" stroke-width="1" opacity=".5"/>
+                    <rect x="40.25" y="40.25" width="119.5" height="119.5" fill="none" stroke="#f0ebdb" stroke-width="1" opacity=".5"/>
                     <g class="ring" opacity=".5">
                         <line x1="100" y1="6" x2="100" y2="194" stroke="#e2b857" stroke-width=".6"/>
                         <line x1="6" y1="100" x2="194" y2="100" stroke="#e2b857" stroke-width=".6"/>
                     </g>
                     <circle cx="100" cy="100" r="2.4" fill="#e2b857"/>
                     <line x1="100" y1="100" x2="176" y2="100" stroke="#e2b857" stroke-width=".8" opacity=".8"/>
-                    <text x="138" y="94" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#9d9887">R</text>
+                    <text x="138" y="94" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#9c978a">R</text>
                 </svg>
             </a>
 
-            <a class="row rv" href="https://gutwise.thealpha-secret.xyz">
-                <span class="row-idx">02</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🧬</span>GutWise</span>
-                <span class="row-desc">Science-backed wisdom for gut health, microbiome optimization, and reclaiming your vitality from within.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+            <div class="grid">
+                <a class="card rv" href="https://gutwise.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🧬</span>
+                    <span>
+                        <h3>GutWise</h3>
+                        <p>Science-backed wisdom for gut health, microbiome optimization, and reclaiming your vitality from within.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">02</span>
+                </a>
 
-            <a class="row rv" href="https://ai-body.thealpha-secret.xyz">
-                <span class="row-idx">03</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🤖</span>AI Body</span>
-                <span class="row-desc">AI-powered fitness, body transformation, and smart training protocols for the modern age.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://ai-body.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🤖</span>
+                    <span>
+                        <h3>AI Body</h3>
+                        <p>AI-powered fitness, body transformation, and smart training protocols for the modern age.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">03</span>
+                </a>
 
-            <a class="row rv" href="https://haiti.thealpha-secret.xyz">
-                <span class="row-idx">04</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🇭🇹</span>History of Haiti</span>
-                <span class="row-desc">Ayiti, Land of High Mountains — a comprehensive history from pre-Columbian times to the present.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://haiti.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🇭🇹</span>
+                    <span>
+                        <h3>History of Haiti</h3>
+                        <p>Ayiti, Land of High Mountains — a comprehensive history from pre-Columbian times to the present.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">04</span>
+                </a>
+            </div>
         </section>
 
         <section class="group" id="markets">
@@ -382,54 +441,77 @@
                 <p>Tools for watching the world move — and for moving with it.</p>
             </div>
 
-            <a class="row rv" href="https://worldmonitor.thealpha-secret.xyz">
-                <span class="row-idx">05</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🌍</span>World Monitor</span>
-                <span class="row-desc">Global intelligence workspace — live markets, real-time geopolitical headlines, and risk signals in one dark dashboard.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+            <div class="grid">
+                <a class="card rv" href="https://worldmonitor.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🌍</span>
+                    <span>
+                        <h3>World Monitor</h3>
+                        <p>Global intelligence workspace — live markets, real-time geopolitical headlines, and risk signals in one dark dashboard.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">05</span>
+                </a>
 
-            <a class="row rv" href="https://okx.thealpha-secret.xyz">
-                <span class="row-idx">06</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🏦</span>OKX</span>
-                <span class="row-desc">Crypto exchange tools, analytics, and trading resources for the Solana ecosystem.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://okx.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🏦</span>
+                    <span>
+                        <h3>OKX</h3>
+                        <p>Crypto exchange tools, analytics, and trading resources for the Solana ecosystem.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">06</span>
+                </a>
 
-            <a class="row rv" href="https://claw.thealpha-secret.xyz">
-                <span class="row-idx">07</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🦞</span>$CLAW</span>
-                <span class="row-desc">Decentralized intelligence token on Solana. Fair-launched, community-driven, and built for the future of decentralized AI.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://claw.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🦞</span>
+                    <span>
+                        <h3>$CLAW</h3>
+                        <p>Decentralized intelligence token on Solana. Fair-launched, community-driven, and built for the future of decentralized AI.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">07</span>
+                </a>
 
-            <a class="row rv" href="https://shakepay.thealpha-secret.xyz">
-                <span class="row-idx">08</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">💳</span>Shakepay</span>
-                <span class="row-desc">Canadian crypto gateway — buy, sell, and earn Bitcoin rewards with ease.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://shakepay.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">💳</span>
+                    <span>
+                        <h3>Shakepay</h3>
+                        <p>Canadian crypto gateway — buy, sell, and earn Bitcoin rewards with ease.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">08</span>
+                </a>
 
-            <a class="row rv" href="https://wealthsimple.thealpha-secret.xyz">
-                <span class="row-idx">09</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">📈</span>Wealthsimple</span>
-                <span class="row-desc">Invest, save, and trade — fund any account and get $25. Referral code TJ_FHW.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://wealthsimple.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">📈</span>
+                    <span>
+                        <h3>Wealthsimple</h3>
+                        <p>Invest, save, and trade — fund any account and get $25. Referral code TJ_FHW.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">09</span>
+                </a>
 
-            <a class="row rv" href="https://cryptotab.thealpha-secret.xyz">
-                <span class="row-idx">10</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">⚡</span>CryptoTab</span>
-                <span class="row-desc">Earn while you browse — the simple way to put idle online time to work.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://cryptotab.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">⚡</span>
+                    <span>
+                        <h3>CryptoTab</h3>
+                        <p>Earn while you browse — the simple way to put idle online time to work.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">10</span>
+                </a>
 
-            <a class="row rv" href="https://nft.thealpha-secret.xyz">
-                <span class="row-idx">11</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🖼️</span>NoX Apes</span>
-                <span class="row-desc">NFT collection and digital art marketplace.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://nft.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🖼️</span>
+                    <span>
+                        <h3>NoX Apes</h3>
+                        <p>NFT collection and digital art marketplace.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">11</span>
+                </a>
+            </div>
         </section>
 
         <section class="group" id="network">
@@ -439,49 +521,177 @@
                 <p>Infrastructure and a room to talk in. Everyone is welcome.</p>
             </div>
 
-            <a class="row rv" href="https://pinet.thealpha-secret.xyz">
-                <span class="row-idx">12</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🌐</span>PiNet</span>
-                <span class="row-desc">Decentralized infrastructure and network tools for the future of the web.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+            <div class="grid">
+                <a class="card rv" href="https://pinet.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🌐</span>
+                    <span>
+                        <h3>PiNet</h3>
+                        <p>Decentralized infrastructure and network tools for the future of the web.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">12</span>
+                </a>
 
-            <a class="row rv" href="https://lure.thealpha-secret.xyz">
-                <span class="row-idx">13</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">🎣</span>Lure</span>
-                <span class="row-desc">Smart lead generation and conversion tools for digital marketing campaigns.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="https://lure.thealpha-secret.xyz">
+                    <span class="ico" aria-hidden="true">🎣</span>
+                    <span>
+                        <h3>Lure</h3>
+                        <p>Smart lead generation and conversion tools for digital marketing campaigns.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">13</span>
+                </a>
 
-            <a class="row rv" href="irc://irc.thealpha-secret.xyz:6697">
-                <span class="row-idx">14</span>
-                <span class="row-name"><span class="gl" aria-hidden="true">💬</span>IRC Chat</span>
-                <span class="row-desc">Live community on irc.thealpha-secret.xyz:6697 (SSL). Join #thealpha and say hello.</span>
-                <span class="row-go" aria-hidden="true">→</span>
-            </a>
+                <a class="card rv" href="irc://irc.thealpha-secret.xyz:6697">
+                    <span class="ico" aria-hidden="true">💬</span>
+                    <span>
+                        <h3>IRC Chat</h3>
+                        <p>Live community on irc.thealpha-secret.xyz:6697 (TLS). Join #thealpha and say hello.</p>
+                    </span>
+                    <span class="go" aria-hidden="true">→</span>
+                    <span class="num">14</span>
+                </a>
+            </div>
         </section>
     </div>
 
     <section class="connect" id="connect">
-        <div>
+        <div class="connect-head">
             <h2>Come sit in the room.</h2>
-            <p>#thealpha is an open channel for anyone curious about the work — questions, corrections, and long conversations all welcome. Point your IRC client at:</p>
-            <div class="ircline">
-                <span id="irc-addr">irc.thealpha-secret.xyz:6697</span>
-                <em>SSL · #thealpha</em>
-                <button class="copy" id="copyBtn" type="button" data-addr="irc.thealpha-secret.xyz:6697">Copy</button>
+            <p><b>#thealpha</b> is an open channel for anyone curious about the work — questions, corrections and long
+               conversations all welcome. Pick your device, install one app, and you are in.</p>
+        </div>
+
+        <div class="irc">
+            <div class="panelbox">
+                <div class="tabs" role="tablist" aria-label="Choose your device">
+                    <button class="tab" role="tab" id="tab-android" aria-controls="panel-android" aria-selected="true">📱 Android</button>
+                    <button class="tab" role="tab" id="tab-ios" aria-controls="panel-ios" aria-selected="false" tabindex="-1">🍎 iPhone &amp; iPad</button>
+                    <button class="tab" role="tab" id="tab-desktop" aria-controls="panel-desktop" aria-selected="false" tabindex="-1">💻 Desktop</button>
+                    <button class="tab" role="tab" id="tab-web" aria-controls="panel-web" aria-selected="false" tabindex="-1">🌐 Browser</button>
+                </div>
+
+                <div class="panel" role="tabpanel" id="panel-android" aria-labelledby="tab-android">
+                    <div class="app">
+                        <span class="ico" aria-hidden="true">📱</span>
+                        <div>
+                            <h3>Revolution IRC <span class="badge free">Free · open source</span></h3>
+                            <p>The best Android IRC client — solid TLS support, IRCv3, several servers in one app,
+                               and no ads. It is no longer on Google Play, so install it from F-Droid.</p>
+                            <div class="get">
+                                <a class="btn-sm prim" href="https://f-droid.org/packages/io.mrarm.irc/" rel="noopener">Get it on F-Droid ↗</a>
+                                <a class="btn-sm" href="https://github.com/MCMrARM/revolution-irc" rel="noopener">Source code ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="steps">
+                        <li><span>Open the app and tap <b>Servers → +</b> to add a server.</span></li>
+                        <li><span>Address <code>irc.thealpha-secret.xyz</code>, port <code>6697</code>, and switch <b>TLS/SSL on</b>.</span></li>
+                        <li><span>Pick any nickname, then tap <b>Connect</b>.</span></li>
+                        <li><span>Type <code>/join #thealpha</code> and say hello.</span></li>
+                    </ol>
+                </div>
+
+                <div class="panel" role="tabpanel" id="panel-ios" aria-labelledby="tab-ios" hidden>
+                    <div class="app">
+                        <span class="ico" aria-hidden="true">🍎</span>
+                        <div>
+                            <h3>Igloo <span class="badge free">Free</span></h3>
+                            <p>A modern iPhone and iPad IRC client with TLS, push notifications and a clean
+                               interface — the smoothest way onto #thealpha from iOS.</p>
+                            <div class="get">
+                                <a class="btn-sm prim" href="https://apps.apple.com/us/app/igloo/id6475702560" rel="noopener">Get it on the App Store ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="steps">
+                        <li><span>Open Igloo and tap <b>+</b> to add a network, then choose <b>Add manually</b>.</span></li>
+                        <li><span>Host <code>irc.thealpha-secret.xyz</code> and port <code>6697</code>, with <b>SSL/TLS enabled</b>.</span></li>
+                        <li><span>Add channel <code>#thealpha</code> before connecting, or join it afterwards.</span></li>
+                        <li><span>Pick any nickname and connect.</span></li>
+                    </ol>
+                </div>
+
+                <div class="panel" role="tabpanel" id="panel-desktop" aria-labelledby="tab-desktop" hidden>
+                    <div class="app">
+                        <span class="ico" aria-hidden="true">💻</span>
+                        <div>
+                            <h3>Halloy <span class="badge free">Free · open source</span></h3>
+                            <p>A fast, modern IRC client for macOS, Windows and Linux — the recommended pick for a
+                               desktop window. Prefer a terminal? <b>WeeChat</b> runs anywhere and does everything.</p>
+                            <div class="get">
+                                <a class="btn-sm prim" href="https://halloy.chat" rel="noopener">Download Halloy ↗</a>
+                                <a class="btn-sm" href="https://weechat.org" rel="noopener">Get WeeChat ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="steps">
+                        <li><span>In Halloy, add a server — host <code>irc.thealpha-secret.xyz</code>, port <code>6697</code>, TLS on.</span></li>
+                        <li><span>Nickname: anything you like. Channel: <code>#thealpha</code>.</span></li>
+                        <li><span>WeeChat users, two commands: <code>/server add alpha irc.thealpha-secret.xyz/6697 -ssl</code> then <code>/connect alpha</code>.</span></li>
+                    </ol>
+                </div>
+
+                <div class="panel" role="tabpanel" id="panel-web" aria-labelledby="tab-web" hidden>
+                    <div class="app">
+                        <span class="ico" aria-hidden="true">🌐</span>
+                        <div>
+                            <h3>KiwiIRC <span class="badge free">Nothing to install</span></h3>
+                            <p>No app and no account — a complete IRC client in a browser tab. The link below is
+                               already filled in with this network's address, port and channel; choose a nickname
+                               and press Start.</p>
+                            <div class="get">
+                                <a class="btn-sm prim" href="https://kiwiirc.com/nextclient/irc.thealpha-secret.xyz:+6697" rel="noopener">Open the web client ↗</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="steps">
+                        <li><span>Click the button above and enter any nickname.</span></li>
+                        <li><span>Channel <code>#thealpha</code> is preset — press <b>Start</b>.</span></li>
+                        <li><span>The best option on a phone whose carrier blocks port 6697 (see the note).</span></li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="settings">
+                <h3>Connection details</h3>
+                <dl class="rows">
+                    <div class="row">
+                        <dt>Server</dt>
+                        <dd>irc.thealpha-secret.xyz</dd>
+                        <button class="copy" type="button" data-copy="irc.thealpha-secret.xyz" aria-label="Copy server address">Copy</button>
+                    </div>
+                    <div class="row">
+                        <dt>Port</dt>
+                        <dd>6697 · TLS</dd>
+                        <button class="copy" type="button" data-copy="6697" aria-label="Copy port number">Copy</button>
+                    </div>
+                    <div class="row">
+                        <dt>Channel</dt>
+                        <dd>#thealpha</dd>
+                        <button class="copy" type="button" data-copy="/join #thealpha" aria-label="Copy join command">Copy</button>
+                    </div>
+                    <div class="row">
+                        <dt>Nickname</dt>
+                        <dd>anything you like</dd>
+                    </div>
+                </dl>
+                <div class="note">
+                    <span><b>Keep your nickname.</b> After you have been connected for 15 minutes, register it:
+                        <code>/msg NickServ REGISTER &lt;password&gt; &lt;email&gt;</code> — no email confirmation is needed.</span>
+                    <span><b>On mobile data?</b> Some carriers (Fizz LTE does) block port 6697. Use the
+                        <b>Browser</b> tab, or change the port to <code>8443</code> and accept this network's
+                        self-signed certificate — its SHA-256 fingerprint never changes:
+                        <span class="fp">A7:B0:EC:20:3A:47:AF:1F:9C:03:00:FA:B5:05:C3:7D:14:AD:A1:A5:7F:DD:41:E4:00:94:1C:55:FC:9B:F3:F8</span>
+                    </span>
+                </div>
             </div>
         </div>
-        <dl class="spec">
-            <div><dt>Server</dt><dd>irc.thealpha-secret.xyz</dd></div>
-            <div><dt>Port</dt><dd>6697 · TLS</dd></div>
-            <div><dt>Channel</dt><dd>#thealpha</dd></div>
-        </dl>
     </section>
     </main>
 
     <footer>
-        <span class="fmark">Φ The Alpha Secret</span>
+        <span class="fmark"><span aria-hidden="true">Φ</span> The Alpha Secret</span>
         <span>© 2026 · Exploring the truth beneath reality</span>
         <nav aria-label="Legal">
             <a href="https://gutwise.thealpha-secret.xyz/privacy.html">Privacy</a>
@@ -494,12 +704,13 @@
 (function(){
 'use strict';
 
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 /* ── hero geometry: circle, its equal-perimeter square, golden spiral ── */
 var PHI=(1+Math.sqrt(5))/2;
 var SQRT_PHI=Math.sqrt(PHI);
 var GOLDEN_PI=4/SQRT_PHI;            /* 4/√φ */
 var SIDE=GOLDEN_PI/2;                /* square side so perimeter = circumference (r=1) */
-var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function drawArt(){
     var cv=document.getElementById('art');
@@ -515,7 +726,7 @@ function drawArt(){
     var c=size/2, R=size*0.335, t=performance.now()/1000;
 
     /* faint guide grid */
-    ctx.strokeStyle='rgba(238,232,214,0.06)';ctx.lineWidth=1;
+    ctx.strokeStyle='rgba(240,235,219,0.05)';ctx.lineWidth=1;
     for(var i=1;i<6;i++){
         var p=(size/6)*i;
         ctx.beginPath();ctx.moveTo(p,0);ctx.lineTo(p,size);ctx.stroke();
@@ -527,7 +738,7 @@ function drawArt(){
     ctx.save();
     ctx.translate(c,c);
     ctx.rotate(reduce?Math.PI/4:t*0.012);
-    ctx.strokeStyle='rgba(238,232,214,0.55)';ctx.lineWidth=1;
+    ctx.strokeStyle='rgba(240,235,219,0.5)';ctx.lineWidth=1;
     ctx.strokeRect(-half,-half,half*2,half*2);
     ctx.restore();
 
@@ -540,7 +751,7 @@ function drawArt(){
     ctx.beginPath();ctx.arc(c,c,R,0,Math.PI*2);ctx.stroke();
 
     /* faint construction circles (φ and 1/φ²) */
-    ctx.strokeStyle='rgba(238,232,214,0.075)';ctx.lineWidth=1;
+    ctx.strokeStyle='rgba(240,235,219,0.07)';ctx.lineWidth=1;
     [0.618,0.382].forEach(function(k){
         ctx.beginPath();ctx.arc(c,c,R*k,0,Math.PI*2);ctx.stroke();
     });
@@ -553,7 +764,7 @@ function drawArt(){
     ctx.beginPath();ctx.arc(c,c,1.8,0,Math.PI*2);ctx.fill();
 
     /* golden spiral, held inside the circle */
-    ctx.strokeStyle='rgba(226,184,87,0.34)';ctx.lineWidth=1;
+    ctx.strokeStyle='rgba(226,184,87,0.32)';ctx.lineWidth=1;
     ctx.beginPath();
     var started=false, spiralOff=ra+Math.PI*0.62;
     for(var a=0;a<Math.PI*6;a+=0.03){
@@ -587,6 +798,13 @@ if('ResizeObserver' in window){ new ResizeObserver(function(){ drawArt(); }).obs
 
 /* ── reveal on scroll ── */
 var items=[].slice.call(document.querySelectorAll('.rv'));
+function revealNow(el){ el.classList.add('in'); }
+function revealInView(){
+    items.forEach(function(el){
+        var r=el.getBoundingClientRect();
+        if(r.top < window.innerHeight - 40 && r.bottom > 0){ revealNow(el); }
+    });
+}
 if('IntersectionObserver' in window && !reduce){
     var io=new IntersectionObserver(function(es){
         es.forEach(function(e,i){
@@ -598,31 +816,86 @@ if('IntersectionObserver' in window && !reduce){
         });
     },{rootMargin:'0px 0px -8% 0px',threshold:0.12});
     items.forEach(function(el){ io.observe(el); });
+    /* Safety net: a deep link (#connect) or a fast jump can land on elements the observer
+       never got to report. Anything the user can actually see must never stay at opacity 0. */
+    setTimeout(revealInView, 900);
+    window.addEventListener('hashchange',function(){ setTimeout(revealInView,120); });
 }else{
-    items.forEach(function(el){ el.classList.add('in'); });
+    items.forEach(revealNow);
 }
 
-/* ── sticky bar border ── */
-var bar=document.getElementById('bar');
-function onScroll(){ bar.classList.toggle('stuck', window.scrollY>18); }
-onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
-
-/* ── copy IRC address ── */
-var btn=document.getElementById('copyBtn');
-if(btn){
-    btn.addEventListener('click',function(){
-        var addr=btn.getAttribute('data-addr');
-        var done=function(){ btn.textContent='Copied'; btn.classList.add('done'); setTimeout(function(){ btn.textContent='Copy'; btn.classList.remove('done'); },2000); };
-        if(navigator.clipboard&&navigator.clipboard.writeText){
-            navigator.clipboard.writeText(addr).then(done,function(){ fallback(); });
-        } else { fallback(); }
-        function fallback(){
-            var ta=document.createElement('textarea'); ta.value=addr; ta.setAttribute('readonly','');
-            ta.style.position='absolute'; ta.style.left='-9999px'; document.body.appendChild(ta);
-            ta.select(); try{ document.execCommand('copy'); done(); }catch(e){} document.body.removeChild(ta);
-        }
+/* ── sticky bar border, scroll progress, active section ── */
+var bar=document.getElementById('bar'), prog=document.getElementById('prog'), ticking=false;
+var secs=['truth','markets','network','connect'].map(function(id){ return document.getElementById(id); })
+         .filter(function(el){ return !!el; });
+var navLinks=[].slice.call(document.querySelectorAll('.bar nav a[href^="#"]'));
+function syncNav(){
+    var y=(window.scrollY||document.documentElement.scrollTop)+130, current=null;
+    secs.forEach(function(s){ if(s.offsetTop<=y) current=s.id; });
+    navLinks.forEach(function(a){
+        if(current && a.getAttribute('href')==='#'+current){ a.setAttribute('aria-current','true'); }
+        else { a.removeAttribute('aria-current'); }
     });
 }
+function onScroll(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    if(bar) bar.classList.toggle('stuck', y>18);
+    if(prog){
+        var h=document.documentElement.scrollHeight-window.innerHeight;
+        prog.style.width=(h>0?Math.min(100,(y/h)*100):0)+'%';
+    }
+    syncNav();
+    ticking=false;
+}
+onScroll();
+window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll); } },{passive:true});
+window.addEventListener('resize',function(){ syncNav(); });
+
+/* ── IRC platform tabs ── */
+var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
+function selectTab(tab,focus){
+    tabs.forEach(function(t){
+        var selected=(t===tab);
+        t.setAttribute('aria-selected',selected?'true':'false');
+        t.tabIndex=selected?0:-1;
+        var panel=document.getElementById(t.getAttribute('aria-controls'));
+        if(panel){ if(selected){ panel.removeAttribute('hidden'); } else { panel.setAttribute('hidden',''); } }
+    });
+    if(focus) tab.focus();
+}
+tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){ selectTab(t,false); });
+    t.addEventListener('keydown',function(ev){
+        var k=ev.key, n=null;
+        if(k==='ArrowRight'||k==='ArrowDown') n=tabs[(i+1)%tabs.length];
+        else if(k==='ArrowLeft'||k==='ArrowUp') n=tabs[(i-1+tabs.length)%tabs.length];
+        else if(k==='Home') n=tabs[0];
+        else if(k==='End') n=tabs[tabs.length-1];
+        if(n){ ev.preventDefault(); selectTab(n,true); }
+    });
+});
+
+/* ── copy buttons ── */
+[].slice.call(document.querySelectorAll('.copy')).forEach(function(btn){
+    btn.addEventListener('click',function(){
+        var text=btn.getAttribute('data-copy')||'';
+        function done(){
+            var old=btn.textContent;
+            btn.textContent='Copied'; btn.classList.add('done');
+            setTimeout(function(){ btn.textContent=old; btn.classList.remove('done'); },1600);
+        }
+        function fallback(){
+            var ta=document.createElement('textarea');
+            ta.value=text; ta.setAttribute('readonly',''); ta.style.position='absolute'; ta.style.left='-9999px';
+            document.body.appendChild(ta); ta.select();
+            try{ document.execCommand('copy'); done(); }catch(e){}
+            document.body.removeChild(ta);
+        }
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+            navigator.clipboard.writeText(text).then(done,fallback);
+        } else { fallback(); }
+    });
+});
 })();
 
 /* ── Google Translate widget ── */
