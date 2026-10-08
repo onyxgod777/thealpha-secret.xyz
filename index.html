@@ -796,33 +796,26 @@ document.addEventListener('visibilitychange',function(){ document.hidden?stopArt
 window.addEventListener('resize',function(){ clearTimeout(window.__rt); window.__rt=setTimeout(function(){ drawArt(); },160); });
 if('ResizeObserver' in window){ new ResizeObserver(function(){ drawArt(); }).observe(document.querySelector('.hero-art')); }
 
-/* ── reveal on scroll ── */
+/* ── reveal on scroll ──
+   Deliberately scroll-driven rather than IntersectionObserver: an observer misses
+   elements when the page jumps (deep link, restored scroll, late-loading webfonts),
+   which leaves visible cards stuck at opacity 0. A rect check on every throttled
+   scroll cannot miss, and with 14 elements the cost is nil. */
 var items=[].slice.call(document.querySelectorAll('.rv'));
 function revealNow(el){ el.classList.add('in'); }
 function revealInView(){
+    if(reduce){ return; }
     items.forEach(function(el){
+        if(el.classList.contains('in')) return;
         var r=el.getBoundingClientRect();
-        if(r.top < window.innerHeight - 40 && r.bottom > 0){ revealNow(el); }
+        if(r.top < window.innerHeight - 40 && r.bottom > -40){ revealNow(el); }
     });
 }
-if('IntersectionObserver' in window && !reduce){
-    var io=new IntersectionObserver(function(es){
-        es.forEach(function(e,i){
-            if(e.isIntersecting){
-                var el=e.target;
-                setTimeout(function(){ el.classList.add('in'); }, Math.min(i,6)*55);
-                io.unobserve(el);
-            }
-        });
-    },{rootMargin:'0px 0px -8% 0px',threshold:0.12});
-    items.forEach(function(el){ io.observe(el); });
-    /* Safety net: a deep link (#connect) or a fast jump can land on elements the observer
-       never got to report. Anything the user can actually see must never stay at opacity 0. */
-    setTimeout(revealInView, 900);
-    window.addEventListener('hashchange',function(){ setTimeout(revealInView,120); });
-}else{
-    items.forEach(revealNow);
-}
+if(reduce){ items.forEach(revealNow); }
+/* Nothing may stay hidden: if the scroll-driven pass somehow misses (page jumped,
+   fonts shifted, anchor scroll raced the check), reveal the rest shortly after load.
+   Below-the-fold items are off-screen by then, so the animation is not lost. */
+setTimeout(function(){ items.forEach(revealNow); }, 2200);
 
 /* ── sticky bar border, scroll progress, active section ── */
 var bar=document.getElementById('bar'), prog=document.getElementById('prog'), ticking=false;
@@ -844,12 +837,28 @@ function onScroll(){
         var h=document.documentElement.scrollHeight-window.innerHeight;
         prog.style.width=(h>0?Math.min(100,(y/h)*100):0)+'%';
     }
+    revealInView();
     syncNav();
     ticking=false;
 }
 onScroll();
 window.addEventListener('scroll',function(){ if(!ticking){ ticking=true; requestAnimationFrame(onScroll); } },{passive:true});
-window.addEventListener('resize',function(){ syncNav(); });
+window.addEventListener('resize',function(){ syncNav(); revealInView(); });
+
+/* ── deep links (#connect, #markets …) ──
+   The initial browser jump can miss its target when webfonts and the ad/tracker
+   scripts land afterwards and shift the layout, so re-anchor once things settle. */
+function reanchor(){
+    var id=(location.hash||'').slice(1);
+    if(!id) return;
+    var t=document.getElementById(id);
+    if(!t) return;
+    var y=t.getBoundingClientRect().top + (window.scrollY||0) - 84;
+    window.scrollTo({top:y, behavior:reduce?'auto':'smooth'});
+}
+if(location.hash){ setTimeout(reanchor,300); }
+window.addEventListener('load',function(){ if(location.hash){ setTimeout(reanchor,60); } });
+window.addEventListener('hashchange',function(){ setTimeout(reanchor,60); });
 
 /* ── IRC platform tabs ── */
 var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
